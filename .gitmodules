@@ -1,0 +1,12 @@
+[submodule "Editor_C"]
+	path = Editor_C
+	url = ./Editor_C/
+[submodule "FileSystem_C"]
+	path = FileSystem_C
+	url = ./FileSystem_C/
+[submodule "Toy_Lang"]
+	path = Toy_Lang
+	url = ./Toy_Lang/
+[submodule "SimpleSlicesLibrary"]
+	path = SimpleSlicesLibrary
+	url = ./SimpleSlicesLibrary/

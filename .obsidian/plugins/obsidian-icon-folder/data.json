@@ -1,0 +1,79 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiInfo",
+      "LiCode2",
+      "LiBrush",
+      "LiFolderCog2",
+      "LiImage"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": "^.+\\.md$",
+        "icon": "LiFilePen",
+        "for": "everything",
+        "order": 0
+      },
+      {
+        "rule": "^.+\\.(pdf|png)$",
+        "icon": "LiImage",
+        "for": "everything",
+        "order": 1
+      },
+      {
+        "rule": "^.+\\.(htm|html)$",
+        "icon": "LiCode2",
+        "for": "everything",
+        "order": 2
+      },
+      {
+        "rule": "^.+\\.drawio$",
+        "icon": "LiBrush",
+        "for": "everything",
+        "order": 3
+      },
+      {
+        "rule": ".",
+        "icon": "LiFile",
+        "for": "everything",
+        "order": 4
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "01.16.26.pdf": "LiImage",
+  "02.20.26.pdf": "LiImage",
+  "01.21.26_files": "LiFolderCog2",
+  "01.28.26.pdf": "LiImage",
+  "01.21.26.pdf": "LiImage",
+  "DerivativeIdentities.png": "LiImage",
+  "DerivativeRules.png": "LiImage",
+  "02.20.26.drawio": "LiBrush",
+  "01.16.26.drawio": "LiBrush",
+  "01.21.26.htm": "LiCode2",
+  "Wiki C89 - analysis.md": "LiInfo"
+}
