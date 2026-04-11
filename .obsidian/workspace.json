@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
+            "id": "09e5b63e91627a31",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
             "id": "5f73e18bbecedd80",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wiki C89 - analysis.md",
+                "file": "C89 Notes.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Wiki C89 - analysis"
+              "title": "C89 Notes"
             }
           }
         ]
@@ -186,9 +200,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "5f73e18bbecedd80",
+  "active": "09e5b63e91627a31",
   "lastOpenFiles": [
-    "Wiki C89 - analysis.md",
+    "C89 Notes.md",
+    "Editor_C/build/_deps/sdl2-src/docs/README.md",
+    "SimpleSlicesLibrary/README.md",
+    "Editor_C/cimgui/imgui/examples/example_glfw_wgpu/README.md",
+    "echo.c",
+    "Toy_Lang/main.c",
+    "Editor_C/cimgui/README.md",
+    "Editor_C/build/_deps/sdl2-src/docs/README-macos.md",
     "Welcome.md"
   ]
 }

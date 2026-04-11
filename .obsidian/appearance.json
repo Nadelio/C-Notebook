@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Obsidian gruvbox"
+  "cssTheme": "Obsidian gruvbox",
+  "monospaceFontFamily": "Fira Code",
+  "textFontFamily": "Fira Code",
+  "interfaceFontFamily": "Fira Code"
 }

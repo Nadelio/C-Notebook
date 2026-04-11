@@ -39,10 +39,16 @@
         "order": 3
       },
       {
+        "rule": "^.+\\.c$",
+        "icon": "LiFileCode",
+        "for": "everything",
+        "order": 4
+      },
+      {
         "rule": ".",
         "icon": "LiFile",
         "for": "everything",
-        "order": 4
+        "order": 5
       }
     ],
     "extraMargin": {
@@ -75,5 +81,5 @@
   "02.20.26.drawio": "LiBrush",
   "01.16.26.drawio": "LiBrush",
   "01.21.26.htm": "LiCode2",
-  "Wiki C89 - analysis.md": "LiInfo"
+  "C89 Notes.md": "LiInfo"
 }

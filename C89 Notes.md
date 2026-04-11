@@ -6,7 +6,7 @@ tags:
 
 ---
 
-## ✅ Variables
+## Variables
 
 - single declaration : `type name` (`int fahr`)
 - multiple declaration : `type name1, name2` (`int fahr, cels`)
@@ -46,9 +46,9 @@ Types
 - Comparison: `<`, `>`, `<=`, `>=`, `==`, `!=`
 - Bitwise: `&`, `|`, `<<`, `>>`, `^`, `~`
 - Boolean: `&&`, `||`, `!` (result can only be `1` or `0`)
-- Conditional : `?:` (`COND ? true : false`)
+- Conditional : `?:` (`COND ? <true branch> : <false branch>`)
 - Cast: `(TYPE)EXPR`
-- Compile time : `sizeof`
+- Compile time : `sizeof(EXPR)`
 
 Details
 
@@ -77,12 +77,12 @@ Precedence
 14. `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=`
 15. `,`
 
-## ✅ Functions
+## Functions
 
-- declaration (prototype) : `type name(params);`
-- definition : `type name(params) { declarations statements }`
-- pointer function : `RTYP (*NAME)(PRMTs)`
-- pointer function call : `(*NAME)(PRMTs)`
+- declaration (prototype) : `RET_TYPE NAME(PARAMs);`
+- definition : `RET_TYPE NAME(PARAMs) { ... }`
+- pointer function : `RET_TYPE (*NAME)(PARAMs)`
+- pointer function call : `(*NAME)(PARAMs)`
 
 > [!example]
 >
@@ -110,7 +110,7 @@ Behaviour
 
 - `return` : exits the function
 - function arguments are passed "by value" (copied)
-- array arguments always decay to the pointer to the first element in the parameter
+- array arguments always decay to the pointer to the first element in the parameter (`int arr[]` -> `int* arr`)
 - empty parameters declaration requires the keyword `void` in place of the parameters list
 
 ## Flow Constructs
@@ -120,7 +120,7 @@ Common
 - `break` : exit from switch / loop
 - the condition is true for any non-zero value
 
-### ✅ Loops
+### Loops
 
 - `while(COND) STMT`
 - `do STMT while(EXPR)`
@@ -141,7 +141,7 @@ Common
 > } while(x > y);
 > ```
 
-### ✅ Jumps
+### Jumps
 
 - `if(EXPR) STMT else STMT`
 - `switch(EXPR) { CASEs DEFT }`
@@ -189,7 +189,7 @@ Common
 - Float : `12.34`, `10e2`
 - Number flags: long (`l`, `L`), unsigned (`u`, `U`), floating (`f`, `F`)
 
-### ✅ Enumerations
+### Enumerations
 
 - declaration : `enum name { CNST1, CNSTn }`
 - starts from `0` unless otherwise specified
@@ -232,21 +232,22 @@ Qualifiers
 - `volatile`, `typedef`
 - `const` : the value cannot be changed (impl-defined)
 - Sign (only integers): `unsigned`, `signed` (two's compl.)
-- Size : `short` (2-B), `long` (8-B, also with real numbers)
+- Size : `short` (2 bytes), `long` (8 bytes, also with real numbers)
 - Scope: `auto`, `register`, `extern`, `static`
 
-### ✅ Typedef
+### Typedef
 
-Give a nickname to a type
+Give an alias to a type
 
 > [!example]
 >
 > ```c
 > typedef char Username[25];
 > Username identifier = "Mike";
+> typedef struct { ... } Foo;
 > ```
 
-### ✅ Arrays
+### Arrays
 
 - declaration : `type name[size]` (`int ndigit[10]`)
 - declaring a size allocates the required memory
@@ -287,7 +288,7 @@ Give a nickname to a type
 > }
 > ```
 
-### ✅ Pointers
+### Pointers
 
 - Dereference op: `*`
 - Addressing op: `&`
@@ -309,7 +310,9 @@ Give a nickname to a type
 > ptrdiff_t distance = &a - &b; /* canNOT add ptrs, only subtract */
 > ```
 
-### ✅ Structures
+> [!notice]
+> *In C99, addition is a legal pointer operation*
+### Structures
 
 - Declaration: `struct NAME { ... }`
 - Member access: `NAME.MMBR`
@@ -341,7 +344,7 @@ Give a nickname to a type
 > [!warning]
 >
 > ```c
-> /* NOT C89 COMPLIANT */
+> /* NOT C89 COMPLIANT, IS C99 COMPLIANT */
 > struct User user = { .password = "Mike" };
 > ```
 
@@ -378,7 +381,7 @@ Unions are struct where each member is overlapped (offset 0)
 - Member access: `NAME->MMBR` => `(*NAME).MMBR`
 - Members with offset 0
 
-### ✅ Bit-fields
+### Bit-fields
 
 Bitfields are structures that can contain sub-byte members
 
@@ -423,7 +426,7 @@ Bitfields are structures that can contain sub-byte members
 
 File inclusion
 
-- `#include <FILENAME>`
+- `#include <SYSTEM FILE>`
 - `#include "FILEPATH"`
 
 Symbolic constants
