@@ -35,7 +35,8 @@
               "title": "C89 Notes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,8 +177,19 @@
               "icon": "lucide-list",
               "title": "Outline of Welcome"
             }
+          },
+          {
+            "id": "20216097f308cbd7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -200,14 +212,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "09e5b63e91627a31",
+  "active": "5f73e18bbecedd80",
   "lastOpenFiles": [
+    "Toy_Lang/interpreter.c",
+    "Toy_Lang/main.c",
+    "Toy_Lang/BYTECODE_STANDARD.md",
     "C89 Notes.md",
+    "Toy_Lang/README.md",
+    "Toy_Lang/BYTECDODE_STANDARD.md",
     "Editor_C/build/_deps/sdl2-src/docs/README.md",
     "SimpleSlicesLibrary/README.md",
     "Editor_C/cimgui/imgui/examples/example_glfw_wgpu/README.md",
     "echo.c",
-    "Toy_Lang/main.c",
     "Editor_C/cimgui/README.md",
     "Editor_C/build/_deps/sdl2-src/docs/README-macos.md",
     "Welcome.md"
