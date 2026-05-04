@@ -4,9 +4,12 @@
 [submodule "FileSystem_C"]
 	path = FileSystem_C
 	url = ./FileSystem_C/
-[submodule "Toy_Lang"]
+[submodule "Medusa"]
 	path = Toy_Lang
 	url = ./Toy_Lang/
 [submodule "SimpleSlicesLibrary"]
 	path = SimpleSlicesLibrary
 	url = ./SimpleSlicesLibrary/
+[submodule "VoxelEngine"]
+	path = VoxelEngine
+	url = ./VoxelEngine/
