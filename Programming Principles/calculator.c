@@ -137,7 +137,7 @@ ResultArray* parse_file(char* filename) {
 	ResultArray* results = NULL;
 
 	if((err = fopen_s(&file, filename, "r")) != 0) {
-		_set_errno(2);
+		_set_errno(err);
 		perror("Cannot open file");
 		exit(1);
 	} else {
@@ -174,9 +174,9 @@ ResultArray* parse_file(char* filename) {
 
 		// to prevent any issues with allocating 0 bytes
 		//   for the long array, allocate at least one long
-		if(count == 0) count = 1; 
+		if(count == 0) { count = 1; }
 
-		results = (ResultArray*)malloc((count * sizeof(long)) + sizeof(size_t));
+		results = (ResultArray*)malloc((count * sizeof(long)) + sizeof(ResultArray));
 
 		if(results == NULL) {
 			_set_errno(12);
@@ -185,6 +185,7 @@ ResultArray* parse_file(char* filename) {
 		}
 
 		memset(results, 0, (count * sizeof(long)) + sizeof(size_t));
+		results->results = (long*)((unsigned char*)results + sizeof(ResultArray));
 		results->length = count;
 
 		// print expression with highlighting
