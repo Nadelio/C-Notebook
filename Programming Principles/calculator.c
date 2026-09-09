@@ -247,7 +247,7 @@ long parse_expr(char* expr) {
 
 	skip_whitespace(&parser);
 
-// double check to make sure no leftover characters
+	// double check to make sure no leftover characters
 	if (parser.input[parser.pos] != '\0') {
 		syntax_error(&parser, "Unexpected character");
 	}
@@ -294,6 +294,16 @@ long parse_addition(Parser* parser) {
 	return left;
 }
 
+long nCr(long left, long right) {
+	double sum = 1;
+	
+	for (size_t i = 1; i <= right; i++) {
+		sum = sum * (left - right + i) / i;
+	}
+
+	return (long)sum;
+}
+
 long parse_multiplication(Parser* parser) {
 	long left = parse_unary(parser);
 
@@ -314,6 +324,9 @@ long parse_multiplication(Parser* parser) {
 				syntax_error(parser, "Modulo by zero");
 			}
 			left %= right;
+		} else if (match(parser, 'c')) {
+			long right = parse_unary(parser);
+			left = nCr(left, right);
 		} else {
 			break;
 		}
@@ -395,7 +408,7 @@ long parse_primary(Parser* parser) {
 // SYNTAX HIGHLIGHTING
 
 bool is_operator(char c) {
-	return c == '=' || c == '+' || c == '-' || c == '*' || c == '/' || c == '%' || c == '^';
+	return c == '=' || c == '<' || c == '>' || c == '+' || c == '-' || c == '*' || c == '/' || c == '%' || c == 'c' || c == '^';
 }
 
 #define YELLOW "\x1b[33m"
