@@ -1,11 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 int main(void) {
-	int left, right;
-
-	scanf("%d %d", &left, &right);
-	printf("%d %d\n", left, right);
+	
+	int ternary = (0 < 1) ? 4 : 2; // if 0 < 1 then 4 else 2
+	int math = ((0 < 1) * 2) + 2; // equivalent to above
 
 	return 0;
 }
