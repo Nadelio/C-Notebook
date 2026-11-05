@@ -1,15 +1,18 @@
 [submodule "Editor_C"]
 	path = Editor_C
-	url = ./Editor_C/
+	url = https://github.com/Nadelio/Editor_C
 [submodule "FileSystem_C"]
 	path = FileSystem_C
-	url = ./FileSystem_C/
+	url = https://github.com/Nadelio/FileSystemPractice
 [submodule "Medusa"]
 	path = Toy_Lang
-	url = ./Toy_Lang/
+	url = https://github.com/Nadelio/Medusa-Esolang
+[submodule "SimpleFlagParsingLibrary"]
+	path = SimpleFlagParsingLibrary
+	url = https://github.com/Nadelio/SimpleFlagParsingLibrary
 [submodule "SimpleSlicesLibrary"]
 	path = SimpleSlicesLibrary
-	url = ./SimpleSlicesLibrary/
+	url = https://github.com/Nadelio/SimpleSlicesLibrary
 [submodule "VoxelEngine"]
 	path = VoxelEngine
-	url = ./VoxelEngine/
+	url = https://github.com/Nadelio/VoxelEngine
