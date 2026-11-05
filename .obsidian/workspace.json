@@ -56,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -214,10 +216,10 @@
   },
   "active": "5f73e18bbecedd80",
   "lastOpenFiles": [
+    "C89 Notes.md",
     "Toy_Lang/interpreter.c",
     "Toy_Lang/main.c",
     "Toy_Lang/BYTECODE_STANDARD.md",
-    "C89 Notes.md",
     "Toy_Lang/README.md",
     "Toy_Lang/BYTECDODE_STANDARD.md",
     "Editor_C/build/_deps/sdl2-src/docs/README.md",
